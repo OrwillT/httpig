@@ -8,4 +8,4 @@ RUN upx --ultra-brute httpig
 FROM scratch
 LABEL maintainer "Orwill Q. Song <orwill@anislet.dev>"
 COPY --from=builder /tmp/httpig/httpig /
-CMD ["/httpig"]
+ENTRYPOINT ["/httpig"]
