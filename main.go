@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-http.Handle("/", spa.Handler("/static", "index.html"))
+http.Handle("/", spa.Handler("/dist", "index.html"))
 	http.ListenAndServe(":8080", nil)
 }
